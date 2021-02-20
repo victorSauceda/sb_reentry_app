@@ -10,22 +10,52 @@
 .HeaderContainer {
   width: 90%;
   height: 100%;
-  display: grid;
-  align-items: center;
-  grid-template-columns: max-content auto min-content;
-  grid-template-areas: 'title . logo';
+  display: flex;
+  list-style-type: none;
+  align-items:center;
+
+  /* grid-template-columns: max-content auto min-content; */
+
+  /* grid-template-areas: 'title items logo'; */
 }
 
 .Title {
   color: var(--white);
-  grid-area: title;
+
+  /* grid-area: title; */
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .Logo {
-  grid-area: logo;
-  width: 8rem;
+  /* grid-area: logo; */
+  width:10rem;
+
+  /* clear: right; */
+
+  /* margin-right: 1rem; */
+  margin-left: 4rem;
 }
+.ULStyle {
+  display: flex;
+  list-style-type: none;
+}
+.NavListItem {
+  /* grid-area:items; */
+  width: 3rem;
+
+  /* overflow: hidden; */
+
+  /* float:right; */
+  display:inline;
+  margin-top: 6rem;
+  white-space: nowrap;
+  margin-left: 11rem;
+
+  /* margin-right: .5rem; */
+  clear: both;
+}
+
 
 @media (max-width: 500px) {
   .Logo {
